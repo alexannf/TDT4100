@@ -1,7 +1,7 @@
 package encapsulation;
 
 public class VehicleV2 {
-	
+	 
 	public VehicleV2(char typeOfVehicle, char fuelType, String regNr) {
 		if(!isValidFuelType(fuelType)) {
 			throw new IllegalArgumentException("fuel not correct");
