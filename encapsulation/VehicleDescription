@@ -1,47 +1,47 @@
-Oppgaven handler om en Vehicle-klasse, som håndterer informasjon om 
-et kjøretøy og implementerer innkapslingsmetoder med validering.
-Et Vehicle-objekt inneholder type kjøretøy, drivstoffet det bruker 
+Oppgaven handler om en Vehicle-klasse, som hÃ¥ndterer informasjon om 
+et kjÃ¸retÃ¸y og implementerer innkapslingsmetoder med validering.
+Et Vehicle-objekt inneholder type kjÃ¸retÃ¸y, drivstoffet det bruker 
 og registreringsnummer:
+ 
+Typen kan vÃ¦re enten motorsykkel eller bil.
+Drivstoffet kan vÃ¦re enten hydrogen, elektrisitet, diesel eller bensin. 
+Kun biler kan gÃ¥ pÃ¥ hydrogen. 
 
-Typen kan være enten motorsykkel eller bil.
-Drivstoffet kan være enten hydrogen, elektrisitet, diesel eller bensin. 
-Kun biler kan gå på hydrogen. 
+Gyldige registreringsnummeret avhenger av typen kjÃ¸retÃ¸y og drivstoff 
+etter fÃ¸lgende regler:
 
-Gyldige registreringsnummeret avhenger av typen kjøretøy og drivstoff 
-etter følgende regler:
+KjÃ¸retÃ¸y som gÃ¥r pÃ¥ elektrisitet skal ha registreringsnummer som 
+starter med bokstavene â€œELâ€ eller â€œEKâ€
 
-Kjøretøy som går på elektrisitet skal ha registreringsnummer som 
-starter med bokstavene “EL” eller “EK”
+Hydrogenbilene har registreringsnummer som begynner med bokstavene â€œHYâ€
 
-Hydrogenbilene har registreringsnummer som begynner med bokstavene “HY”
+DieselkjÃ¸retÃ¸y og bensinkjÃ¸retÃ¸y har registreringsnummer som 
+begynner pÃ¥ to bokstaver. De kan ikke vÃ¦re â€œEKâ€, â€œELâ€ eller â€œHYâ€. 
+Bokstavene Ã†, Ã˜ og Ã… skal ikke brukes.
 
-Dieselkjøretøy og bensinkjøretøy har registreringsnummer som 
-begynner på to bokstaver. De kan ikke være “EK”, “EL” eller “HY”. 
-Bokstavene Æ, Ø og Å skal ikke brukes.
+For alle drivstoff gjelder det at det skal vÃ¦re brukt store bokstaver.
 
-For alle drivstoff gjelder det at det skal være brukt store bokstaver.
-
-Ellers så gjelder det at motorsykler har 4 sifre etter bokstavene, 
+Ellers sÃ¥ gjelder det at motorsykler har 4 sifre etter bokstavene, 
 mens biler har 5.
 
-Følgende metoder må implementeres:
+FÃ¸lgende metoder mÃ¥ implementeres:
 
-Vehicle(char, char, String) - Konstruktør der argument-rekkefølgen må være 
-kjøretøystype, drivstofftype og registreringsnummer. Ved ugyldige 
-argumenter utløses unntak av typen IllegalArgumentException.
+Vehicle(char, char, String) - KonstruktÃ¸r der argument-rekkefÃ¸lgen mÃ¥ vÃ¦re 
+kjÃ¸retÃ¸ystype, drivstofftype og registreringsnummer. Ved ugyldige 
+argumenter utlÃ¸ses unntak av typen IllegalArgumentException.
 
-getFuelType() - returnerer type drivstoff som følgende: ‘H’ for hydrogen, 
-‘E’ for elektrisitet, ‘D’ for diesel eller ‘G’ for bensin.
+getFuelType() - returnerer type drivstoff som fÃ¸lgende: â€˜Hâ€™ for hydrogen, 
+â€˜Eâ€™ for elektrisitet, â€˜Dâ€™ for diesel eller â€˜Gâ€™ for bensin.
 getRegistrationNumber() - returnerer registreringsnummeret
 setRegistrationNumber(String)  - endrer registreringsnummeret dersom det er 
-gyldig i henhold til kravene over, og utløser unntak av typen 
+gyldig i henhold til kravene over, og utlÃ¸ser unntak av typen 
 IllegalArgumentException dersom det ikke er gyldig.
 
-getVehicleType() - returnerer kjøretøystype: 'M' for motosykkel, 
+getVehicleType() - returnerer kjÃ¸retÃ¸ystype: 'M' for motosykkel, 
 'C' for bil.
 
-Del 1 – Java-kode
+Del 1 â€“ Java-kode
 Implementer Vehicle-klassen som beskrevet over med stram innkapsling. 
-Eventuelle hjelpemetoder for validering bør også ha stram innkapsling. 
-Det kan være lurt å lese om String-klassen og dens metoder før du setter 
+Eventuelle hjelpemetoder for validering bÃ¸r ogsÃ¥ ha stram innkapsling. 
+Det kan vÃ¦re lurt Ã¥ lese om String-klassen og dens metoder fÃ¸r du setter 
 i gang.
