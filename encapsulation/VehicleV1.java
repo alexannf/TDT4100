@@ -30,7 +30,7 @@ public class VehicleV1 {
 			return false;
 		}
 	}
-	
+	 
 	private boolean isValidFuelType(char fuelType) {
 		if((fuelType == 'H') || (fuelType == 'G') || (fuelType == 'D')) {
 			return true;
