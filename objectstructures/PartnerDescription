@@ -1,0 +1,25 @@
+Denne oppgaven handler om en Partner-klasse med en 1-1-assosiasjon kalt 
+partner tilbake til samme klasse (altså kjønnsnøytralt partnerskap) og 
+det å sikre konsistens, slik at Partner-objekter er parvis knyttet sammen.
+En viktig del av det å implementere assosiasjoner er å sikre konsistens, 
+dvs. at objekter i hver ende av en kobling refererer korrekt til hverandre. 
+Et eksempel på dette for 1-1-assosiasjoner er (kjønnsnøytralt) partnerskap, 
+hvor to partnere er koblet til hverandre når partnerskap inngås og kobles 
+fra hverandre ved en evt. skillsmisse. 
+I denne oppgaven skal en Partner-klasse implementeres og ulike 
+situasjoner håndteres korrekt, som illustrert nedenfor.
+
+Partner-klassen skal inneholde informasjon om navn (en String), som bare 
+skal kunne settes i konstruktøren, og partneren, som er et annet 
+Partner-objekt. Navnet er ikke viktig for oppførselen, men er grei å ha med 
+i en toString()-metode, for å skille Partner-objektene fra hverandre. 
+Partner-klassen skal ha følgende metoder for å lese tilstanden:
+
+getName() - returnerer navnet knyttet til dette Partner-objektet
+getPartner() - returnerer Partner-objektet som er knyttet til dette 
+Partner-objektet, evt. null, hvis partnerskap ikke er inngått
+Partner-klassen har kun én endringsmetode, setPartner(Partner), som 
+brukes både for å inngå partnerskap, når argumentet er et Partner-objekt, 
+og oppløse det, når argumentet er null. Figurene under illustrerer 
+tilfellene som må kunne håndteres, og som testes av testene det er lenket 
+til.
