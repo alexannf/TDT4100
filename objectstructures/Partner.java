@@ -35,7 +35,7 @@ public class Partner {
 			this.partner.setPartner(this);
 		}
 	}
-	
+	@Override
 	public String toString() {
 		return name;
 	}
