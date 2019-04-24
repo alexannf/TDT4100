@@ -2,7 +2,7 @@
  * @author hal
  *
  */
-open module ovinger {
+open module minegenkode {
 	requires javafx.base;
 	requires javafx.controls;
 	requires javafx.fxml;
